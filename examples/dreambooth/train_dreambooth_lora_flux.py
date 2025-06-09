@@ -739,6 +739,7 @@ class DreamBoothDataset(Dataset):
                 args.dataset_name,
                 args.dataset_config_name,
                 cache_dir=args.cache_dir,
+                data_files="dataset.parquet"
             )
             # Preprocessing the datasets.
             column_names = dataset["train"].column_names
